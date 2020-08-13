@@ -38,13 +38,13 @@ class SettingServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/../../config/settings.php' => config_path('laravel-settings.php'),
-            ], 'config');
+            ], 'laravel-settings-config');
 
 
             $filename = 'create_localized_settings_table.php';
             $this->publishes([
                 __DIR__.'/../../migrations/'.$filename => database_path('/migrations/'.date('Y_m_d_His', time()).'_'.$filename),
-            ], 'migrations');
+            ], 'laravel-settings-migrations');
 
         }
 
