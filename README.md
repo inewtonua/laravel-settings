@@ -28,7 +28,7 @@
 1. Create settings table
 
     ```bash
-    php artisan vendor:publish --tag=laravel-settings
+    php artisan vendor:publish --tag=laravel-settings-migrations
     php artisan migrate
     ```
 
