@@ -1,0 +1,46 @@
+{
+    "name": "inewtonua/laravel-settings",
+    "description": "Laravel localized settings storage",
+    "keywords": [
+        "laravel-settings",
+        "settings",
+        "database settings",
+        "eloquent model settings"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitriy Koval",
+            "email": "mirelcom@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inewtonua\\Setting\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inewtonua\\Setting\\Tests\\" : "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inewtonua\\Setting\\SettingServiceProvider"
+            ],
+            "aliases": {
+                "Setting": "Inewtonua\\Setting\\Facades\\SettingFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
