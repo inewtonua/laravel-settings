@@ -31,6 +31,12 @@
     php artisan vendor:publish --tag=laravel-settings-migrations
     php artisan migrate
     ```
+    
+1. Publish configs
+
+    ```bash
+    php artisan vendor:publish --tag=laravel-settings-config
+    ```
 
 ## Usage
 
