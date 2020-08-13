@@ -18,7 +18,7 @@ class Setting
     {
         $this->storage = $storage;
         $this->cache = $cache;
-        $this->cache_ttl = config('setting.cache_ttl', 1200);
+        $this->cache_ttl = config('laravel-settings.cache_ttl', 1200);
     }
 
     /**

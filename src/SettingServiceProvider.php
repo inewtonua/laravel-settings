@@ -22,7 +22,7 @@ class SettingServiceProvider extends ServiceProvider
 
         $this->app->bind(SettingContract::class, EloquentStorage::class);
 
-        $this->mergeConfigFrom(__DIR__.'/../../config/settings.php', 'setting');
+        $this->mergeConfigFrom(__DIR__.'/../../config/settings.php', 'laravel-settings');
 
     }
 
@@ -37,7 +37,7 @@ class SettingServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
 
             $this->publishes([
-                __DIR__.'/../../config/settings.php' => config_path('settings.php'),
+                __DIR__.'/../../config/settings.php' => config_path('laravel-settings.php'),
             ], 'config');
 
 
